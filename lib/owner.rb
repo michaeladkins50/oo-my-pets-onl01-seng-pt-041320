@@ -31,7 +31,6 @@ class Owner
         puts self.name
         puts x.name
         @cats = x.name
-      end
     end
 
   end
