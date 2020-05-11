@@ -27,7 +27,7 @@ class Owner
 
   def cats
 
-    @cats{[]}< << Cat.name
+    @cats{[]} << Cat.name
   #  arra = Cat.all.select {|owner| owner.name == self}
   #  @cats << arra
   # Cat.all.each do |x|
