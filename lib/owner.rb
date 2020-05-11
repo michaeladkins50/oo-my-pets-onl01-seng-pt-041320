@@ -6,7 +6,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @cats = {[@cats]}
+    @cats = {@cats => []}
   end
 
   def say_species
