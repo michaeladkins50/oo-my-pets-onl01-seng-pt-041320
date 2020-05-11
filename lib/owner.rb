@@ -41,7 +41,7 @@ class Owner
        if x.owner.name == self.name
       #  puts self.name
       #  puts x.name
-        @cats = x.name
+        @dogs = x.name
       end
     end
   end
