@@ -1,5 +1,5 @@
 class Owner
-  attr_reader :name, :species, :count, :owner, :cats
+  attr_reader :name, :species, :count, :owner, :cats, :dogs
   @@all = []
 
   def initialize(name)
@@ -7,6 +7,7 @@ class Owner
     @species = "human"
     @@all << self
     @cats = []
+    @dogs =[]
   end
 
   def say_species
@@ -28,8 +29,18 @@ class Owner
   def cats
    Cat.all.select do |x|
        if x.owner.name == self.name
-        puts self.name
-        puts x.name
+      #  puts self.name
+      #  puts x.name
+        @cats = x.name
+      end
+    end
+  end
+
+  def dogs
+   Dog.all.select do |x|
+       if x.owner.name == self.name
+      #  puts self.name
+      #  puts x.name
         @cats = x.name
       end
     end
