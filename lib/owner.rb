@@ -39,8 +39,8 @@ class Owner
   def dogs
    Dog.all.select do |x|
        if x.owner.name == self.name
-      #  puts self.name
-      #  puts x.name
+        puts self.name
+        puts x.name
         @dogs = x.name
       end
     end
