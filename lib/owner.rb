@@ -67,5 +67,5 @@ class Owner
       "I have #{@owner.dogs.count} dogs, and ${#{@owner.cats.count} cats."
 
     end
-      
+
 end
